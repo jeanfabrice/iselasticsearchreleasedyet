@@ -1,0 +1,11 @@
+html {
+  background: #000;
+}
+
+#main div{
+  font-size: 15vmax;
+  font-family: "GustavoBold";
+  color: #fff;
+  text-align: center;
+  line-height: 1em;
+}

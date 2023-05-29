@@ -1,0 +1,46 @@
+{
+  "name": "iselasticsearchreleasedyet",
+  "description": "Is Elasticsearch Released Yet?",
+  "private": true,
+  "homepage": "https://github.com/jeanfabrice/iselasticsearchreleasedyet",
+  "author": {
+    "name": "Jean-Fabrice Bobo",
+    "email": "iselasticsearchreleasedyet@bobo-rousselin.com"
+  },
+  "bugs": "https://github.com/jeanfabrice/iselasticsearchreleasedyet/issues",
+  "license": "MIT",
+  "repository": "github:jeanfabrice/iselasticsearchreleasedyet",
+  "scripts": {
+    "start": "node index",
+    "build:prod": "npx webpack --progress --mode=production --config webpack-config.js",
+    "build:dockerimage": "node build-dockerimage.js"
+  },
+  "dependencies": {
+    "config": "^3.3.9",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "errorhandler": "^1.5.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "moment": "^2.29.4",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/eslint-parser": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "file-loader": "^6.2.0",
+    "nodemon": "^2.0.22",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-middleware": "^6.1.0",
+    "webpack-dev-server": "^4.15.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

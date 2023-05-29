@@ -1,0 +1,9 @@
+extends layout
+
+append css
+  link( rel = 'stylesheet', href = '/static/css/yes.css' )
+
+block content
+  #main.center
+    div.yaynay YAY!
+    div.message New #{version.name} was released #{naturaldate}!

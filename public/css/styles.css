@@ -1,0 +1,61 @@
+body {
+  font-size: 20px;
+  font-family: "GustavoMedium";
+}
+
+@font-face {
+  font-family: "GustavoBold";
+  src: url("../fonts/gustavo_family/gustavo_bold/Gustavo-Bold.eot");
+  src: url("../fonts/gustavo_family/gustavo_bold/Gustavo-Bold.eot") format("woff"),
+  url("../fonts/gustavo_family/gustavo_bold/Gustavo-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "GustavoMedium";
+  src: url("../fonts/gustavo_family/gustavo_medium/Gustavo-Medium.eot");
+  src: url("../fonts/gustavo_family/gustavo_medium/Gustavo-Medium.eot") format("woff"),
+  url("../fonts/gustavo_family/gustavo_medium/Gustavo-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "GustavoRegular";
+  src: url("../fonts/gustavo_family/gustavo_regular/Gustavo-Regular.eot");
+  src: url("../fonts/gustavo_family/gustavo_regular/Gustavo-Regular.eot") format("woff"),
+  url("../fonts/gustavo_family/gustavo_regular/Gustavo-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "GustavoThin";
+  src: url("../fonts/gustavo_family/gustavo_thin/Gustavo-Thin.eot");
+  src: url("../fonts/gustavo_family/gustavo_thin/Gustavo-Thin.eot") format("woff"),
+  url("../fonts/gustavo_family/gustavo_thin/Gustavo-Thin.otf") format("opentype");
+}
+
+
+.center {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#footer {
+  position: absolute;
+  width: 100%;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%,0);
+  text-align: center;
+}
+#footer div.title{
+  font-family: "GustavoRegular";
+  font-size: 1.1vmax;
+  color: #fff;
+  padding-top: 0.5vmax;
+}
+#footer div.text{
+  font-family: "GustavoThin";
+  font-size: 1vmax;
+  color: #fff
+}
+
+a:link, a:visited, a:hover {
+  color:#fff
+}

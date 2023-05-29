@@ -1,0 +1,23 @@
+html {
+  background: url(../images/backgrounds/ben.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#main div.yaynay{
+  font-size: 20vmax;
+  font-family: "GustavoBold";
+  color: #fff;
+  text-align: center;
+  line-height: 1em;
+}
+
+#main div.message{
+  font-size: 3vmax;
+  font-family: "GustavoRegular";
+  color: #fff;
+  text-align: center;
+  line-height: 1em;
+}

@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "globals": {
+    "_": "readonly",
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "babelOptions": {
+      "presets": []
+    },
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": [ "error", { "args": "none", "vars": "all" } ],
+    "quotes": [ "error", "single", { "avoidEscape": true } ],
+    "require-yield": 0,
+    "semi": [ 2, "always" ],
+    "space-before-function-paren": [ "error", "never" ],
+    "strict": [ "error", "global" ]
+  }
+}
