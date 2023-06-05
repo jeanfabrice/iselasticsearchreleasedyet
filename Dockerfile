@@ -21,5 +21,4 @@ COPY --from=dependencies /usr/src/app/build/back .
 COPY --from=dependencies /usr/src/app/build/front public
 COPY --from=dependencies /usr/src/app/package.json .
 RUN npm install
-RUN npm run install:chrome
 CMD [ "node", "bundle-back.js" ]
