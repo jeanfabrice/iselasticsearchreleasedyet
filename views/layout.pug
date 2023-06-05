@@ -3,12 +3,23 @@ html
   head
     meta( charset = 'UTF-8' )
     title= title
-    meta( name='viewport', content = 'width=device-width, initial-scale = 1.0, shrink-to-fit = no' )
+    meta( name = 'viewport', content = 'width=device-width, initial-scale = 1.0, shrink-to-fit = no' )
+    meta( name = 'og:title', content = 'Is Elasticsearch Realeased Yet?' )
+    meta( name = 'og:url', content = 'https://iselasticsearchreleasedyet.co' )
+    meta( name = 'og:description', content = 'Yay? Nay? The question we all want answered.' )
+    meta( name = 'og:type', content = 'website' )
+    meta( name = 'og:image', content = '//ogimage.png' )
+    meta( name = 'og:image:width', content = '1200' )
+    meta( name = 'og:image:height', content = '630' )
+    meta( name = 'twitter:card', content = 'summary_large_image' )
+    meta( name = 'twitter:label1', content = 'Is Elasticsearch Realeased Yet?' )
+    meta( name = 'twitter:data1', content = 'Yay? Nay? The question we all want answered.' )
     meta( http-equiv = 'X-UA-Compatible', content = 'IE=edge' )
     block css
       link(rel='stylesheet', href='/static/css/styles.css')
   body
     block content
-    include footer.pug
+    if !nofooter
+      include footer.pug
   block javascripts
     script( src = '/static/js/common.bundle.js' )
