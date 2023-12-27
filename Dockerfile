@@ -28,4 +28,5 @@ RUN apt-get update \
     && apt-get install -y google-chrome-stable libxss1 libxshmfence1 --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 RUN npm install
+RUN npm run install:chrome
 CMD [ "node", "bundle-back.js" ]
