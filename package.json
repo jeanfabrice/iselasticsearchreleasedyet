@@ -12,11 +12,9 @@
   "repository": "github:jeanfabrice/iselasticsearchreleasedyet",
   "scripts": {
     "start": "node index",
-    "build:prod": "npx webpack --progress --mode=production --config webpack-config.js",
-    "install:chrome": "node node_modules/puppeteer-core/install.js"
+    "build:prod": "npx webpack --progress --mode=production --config webpack-config.js"
   },
   "dependencies": {
-    "chrome-aws-lambda": "^10.1.0",
     "config": "^3.3.9",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -26,7 +24,7 @@
     "moment": "^2.29.4",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
-    "puppeteer-core": "^10.4.0",
+    "puppeteer": "^21.6.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {

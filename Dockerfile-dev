@@ -2,13 +2,6 @@ ARG NODE_TAG=18-slim
 
 FROM node:${NODE_TAG} AS node
 
-FROM node as builder
-ENV NODE_ENV development
-WORKDIR /usr/src/app
-ADD . .
-RUN npm install
-RUN npm run build:prod
-
 FROM node
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -48,13 +41,10 @@ RUN apt-get update \
   lsb-release \
   wget \
   xdg-utils
-ENV NODE_ENV production
+ENV NODE_ENV development
 WORKDIR /usr/src/app
-RUN mkdir public
-COPY --from=builder /usr/src/app/build/back .
-COPY --from=builder /usr/src/app/build/front public
-COPY --from=builder /usr/src/app/package.json .
+ADD . .
 RUN npm install
 USER node
 RUN npx puppeteer browsers install chrome
-CMD [ "node", "bundle-back.js" ]
+CMD [ "node", "index.js" ]

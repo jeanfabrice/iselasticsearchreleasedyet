@@ -27,7 +27,9 @@ module.exports = ( env, argv ) => {
           { from: 'favicon.ico',  to: 'favicon.ico' }
         ]
       }),
-      new ESLintPlugin()
+      new ESLintPlugin({
+          'cache': false
+      })
     ],
     output: {
       path                : __dirname + '/build/front',
