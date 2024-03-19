@@ -1,6 +1,5 @@
 'use strict';
-
-const apm = require( 'elastic-apm-node' ).start();
+require( 'elastic-apm-node' ).start();
 
 const app = require( './lib' );
 
