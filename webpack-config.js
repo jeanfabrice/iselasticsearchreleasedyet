@@ -4,6 +4,7 @@ const CopyPlugin             = require( 'copy-webpack-plugin' );
 const TerserPlugin           = require( 'terser-webpack-plugin' );
 const ESLintPlugin           = require( 'eslint-webpack-plugin' );
 const nodeExternals          = require( 'webpack-node-externals' );
+const webpack                = require( 'webpack' );
 const path                   = require( 'path' );
 
 module.exports = ( env, argv ) => {
@@ -18,6 +19,9 @@ module.exports = ( env, argv ) => {
       extensions: [ '*', '.js', '.jsx' ]
     },
     plugins: [
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(argv.mode)
+      }),
       new CleanWebpackPlugin(),
       new CopyPlugin({
         patterns: [
