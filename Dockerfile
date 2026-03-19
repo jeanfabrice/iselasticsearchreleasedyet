@@ -1,4 +1,4 @@
-ARG NODE_TAG=18-slim
+ARG NODE_TAG=22-slim
 
 FROM node:${NODE_TAG} AS node
 
@@ -57,4 +57,5 @@ COPY --from=builder /usr/src/app/package.json .
 RUN npm install
 USER node
 RUN npx puppeteer browsers install chrome
+HEALTHCHECK --interval=30s --timeout=5s --retries=3 CMD wget -qO- http://localhost:3000/healthz || exit 1
 CMD [ "node", "bundle-back.js" ]

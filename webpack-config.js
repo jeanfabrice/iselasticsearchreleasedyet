@@ -12,7 +12,7 @@ module.exports = ( env, argv ) => {
   const front = {
     target: 'web',
     context: path.resolve( __dirname, 'public' ),
-    entry: { common : './js/common.js' },
+    entry: { common : './js/common.js', fireworks: './js/fireworks.js' },
     externals: {},
     resolve: {
       'alias': {},

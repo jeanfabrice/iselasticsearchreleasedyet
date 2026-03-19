@@ -6,18 +6,20 @@ html {
   background-size: cover;
 }
 
-#main div.yaynay{
+#main .yaynay{
   font-size: 20vmax;
   font-family: "GustavoBold";
   color: #fff;
   text-align: center;
   line-height: 1em;
+  margin: 0;
 }
 
-#main div.message{
+#main .message{
   font-size: 3vmax;
   font-family: "GustavoRegular";
   color: #fff;
   text-align: center;
   line-height: 1em;
+  margin: 0;
 }

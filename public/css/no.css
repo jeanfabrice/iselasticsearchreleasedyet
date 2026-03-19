@@ -2,10 +2,11 @@ html {
   background: #000;
 }
 
-#main div{
+#main h1, #main p{
   font-size: 15vmax;
   font-family: "GustavoBold";
   color: #fff;
   text-align: center;
   line-height: 1em;
+  margin: 0;
 }

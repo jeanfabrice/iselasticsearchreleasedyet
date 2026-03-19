@@ -5,5 +5,8 @@ append css
 
 block content
   #main.center
-    div.yaynay YAY!
-    div.message New #{version.name} was released #{naturaldate}!
+    h1.yaynay YAY!
+    p.message New #{version.name} was released #{naturaldate}!
+
+append javascripts
+  script( src = '/static/js/fireworks.bundle.js' )
