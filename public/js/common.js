@@ -7,7 +7,7 @@
 import { init as initApm } from '@elastic/apm-rum';
 
 initApm({
-  serviceName: 'iselasticsearchreleasedyet',
+  serviceName: 'iselasticsearchreleasedyet-frontend',
   serverUrl: 'https://apm.bobo-rousselin.com:8200',
   environment: process.env.NODE_ENV,
   // Set service version (required for sourcemap feature)
